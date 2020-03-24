@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <p>Project photo studio</p>
+      <small>developed by ashish</small>
     </div>
   );
 }
