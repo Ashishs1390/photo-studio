@@ -76,6 +76,12 @@ function App() {
         </Switch>
       </div>
     </Router>
+
+    <footer className="MainFooter">
+        <h3>
+          This is a footer
+        </h3>
+    </footer>
     </div>
   );
 }
