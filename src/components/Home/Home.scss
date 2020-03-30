@@ -1,5 +1,6 @@
 .HeroImgContainer{
     padding: 0;
+    height: 450px;
 }
 .HeroImg {
     background-image: url('./../../images/img_hero.jpg');
@@ -20,10 +21,17 @@
     }
     .ImgContainer {
         text-align: center;
+        position: relative;
+        top: 133px;
         img{
             margin-right: 40px;
         }
     }
 
 
+}
+
+.ParentCarousel{
+    width: 800px;
+    margin: 0px 48%;
 }

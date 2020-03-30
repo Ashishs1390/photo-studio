@@ -4,6 +4,7 @@ import './Home.scss'
 import img from './../../images/img_brian_circle.png';
 import img2 from './../../images/img_danielle_circle.png';
 import img3 from './../../images/img_lisa_circle.png';
+import Carousel from './../Carousel/Carousel.js'
 
 function Home(){
     return(
@@ -19,6 +20,11 @@ function Home(){
 
                         </div>
                     </div>
+                </Col>
+                <Col md="6">
+                <div  className="ParentCarousel">
+                    <Carousel></Carousel>
+                </div>
                 </Col>
             </Row>
         </Container>
