@@ -1,0 +1,44 @@
+.AboutContainer {
+    h2 {
+        font-size: 3rem;
+    }
+    // padding: 0px 120px;
+
+   
+}
+
+.AboutInfo {
+    .AboutImage,.AboutDesc {
+        float: left;
+        width: 45%;
+    }
+    .AboutDesc {
+        padding-left: 30px;
+        width: 300px;
+        margin-right: 380px;
+        div{
+            margin-top: 50px;
+
+            p{
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+    &::after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+    .AboutImage{
+        width: 58%;
+        background-image: url('./../../images/me.jpeg');
+        height: 90vh;
+        // width: 200px;
+        background-repeat: none;
+        max-width: 100%;
+        // width: 100%;
+        background-size: cover ;        
+    }
+}
