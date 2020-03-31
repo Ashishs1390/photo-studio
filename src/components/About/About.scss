@@ -8,14 +8,12 @@
 }
 
 .AboutInfo {
-    .AboutImage,.AboutDesc {
+    .AboutDesc {
         float: left;
         width: 45%;
-    }
-    .AboutDesc {
         padding-left: 30px;
-        width: 300px;
-        margin-right: 380px;
+        margin-right: 80px;
+        padding-right: 150px;
         div{
             margin-top: 50px;
 
@@ -32,7 +30,8 @@
         clear: both;
     }
     .AboutImage{
-        width: 58%;
+        float: left;
+        width: 48%;
         background-image: url('./../../images/me.jpeg');
         height: 90vh;
         // width: 200px;
