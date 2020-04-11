@@ -12,16 +12,21 @@ function Home(){
             <Row>
                 <Col md="12" className="HeroImgContainer">
                     <div className="HeroImg">
-                        <h2>I am sweekar. Hair and make up artist from Pune.</h2>
+                        {/* <h2>I am sweekar. Hair and make up artist from Pune.</h2> */}
                         <div className="ImgContainer">
-                            <img src={img}></img>
+                            {/* <img src={img}></img> */}
                             <img src={img2}></img>
-                            <img src={img3}></img>
+                            {/* <img src={img3}></img> */}
 
                         </div>
                     </div>
                 </Col>
-                <Col md="6">
+                <Col md="12">
+                    <div className="Headline">
+                        <h2>I am sweekar. Hair and make up artist from Pune.</h2>
+                    </div>
+                </Col>
+                <Col md="12">
                 <div  className="ParentCarousel">
                     <Carousel></Carousel>
                 </div>

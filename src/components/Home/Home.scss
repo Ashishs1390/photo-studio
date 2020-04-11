@@ -4,11 +4,11 @@
 
 .HeroImgContainer{
     padding: 0;
-    height: 450px;
+    height: 600px;
 }
 .HeroImg {
-    background-image: url('./../../images/img_hero.jpg');
-    height: 450px;
+    background-image: url('./../../images/heroimg.jpg');
+    height: 600px;
     // width: 1200px;
     background-repeat: none;
     max-width: 100%;
@@ -24,9 +24,10 @@
         margin-top: 5%;
     }
     .ImgContainer {
+        // display: none;
         text-align: center;
         position: relative;
-        top: 133px;
+        top: 485px;
         img{
             margin-right: 40px;
         }
@@ -34,8 +35,14 @@
 
 
 }
+.Headline {
+    text-align: center;
+    padding: 0 30%;
+    margin-top: 120px;
+
+}
 
 .ParentCarousel{
     width: 800px;
-    margin: 0px 48%;
+    margin: 0px 25%;
 }

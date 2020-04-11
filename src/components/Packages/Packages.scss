@@ -1,0 +1,26 @@
+.ImgSection {
+    background-image: url('./../../images/1.jpeg');
+    height: 90vh;
+    // width: 200px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    // width: 100%;
+    background-size: contain ;
+    background-size: 810px 640px;  
+}
+
+.PackageText{
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.PackageHeader {
+    margin-bottom: 20px;
+}
+.PackageLists {
+    .PackageList {
+        font-size: 1.2rem;
+    margin-left: 30px;
+    line-height: 40px;
+    }
+}
+
