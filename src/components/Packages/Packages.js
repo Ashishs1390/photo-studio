@@ -1,6 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './Packages.scss';
+import img1 from './../../images/1.jpeg'
+import section1 from './../../images/packages/bridalmakeup.jpg';
+import section2 from './../../images/packages/preeweddingmakeup.jpg';
+import section3 from './../../images/packages/HDmakeup.jpg';
+import section4 from './../../images/packages/meternitymakeup.jpg';
+import section5 from './../../images/packages/portfoliomakeup.jpg';
+
+
+
 
 function Packages(){
     return(
@@ -25,13 +34,21 @@ function Packages(){
                     </ul>
                 </Col>
                 <Col md="6" className="PackageImg">
-                  <div className="ImgSection">
+                  {/* {/* <div className="ImgSection">
+                  </div> */}
+                  
+                  <div>
+                      <img src={section1} height="800" width="800" ></img>
                   </div>
                 </Col>
            </Row>
            <Row>
                <Col md="6">
-               <div className="ImgSection">
+               {/* <div className="ImgSection">
+                  </div>
+                   */}
+                   <div>
+                      <img src={section2} height="800" width="800" ></img>
                   </div>
                </Col>
                <Col md="6" className="PackageText Section-2">
@@ -76,14 +93,22 @@ function Packages(){
                 </ul>
                </Col>
                <Col md="6">
-               <div className="ImgSection">
+               {/* <div className="ImgSection">
+                  </div>
+                   */}
+                   <div>
+                      <img src={section3} height="800" width="800" ></img>
                   </div>
                </Col>
            </Row>
            <Row>
            <Col md="6">
-                <div className="ImgSection">
+                {/* <div className="ImgSection">
                 </div>
+                 */}
+                 <div>
+                      <img src={section4} height="800" width="800" ></img>
+                  </div>
             </Col>
             <Col md="6" className="PackageText Section-4">
             <div className="Courses"> 
@@ -149,8 +174,12 @@ function Packages(){
             
             </Col>
            <Col md="6">
-                <div className="ImgSection">
+                {/* <div className="ImgSection">
                 </div>
+                 */}
+                 <div>
+                      <img src={section5} height="800" width="800" ></img>
+                  </div>
             </Col>
            </Row>
            
