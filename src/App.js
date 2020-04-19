@@ -6,13 +6,13 @@ import {
   Link
 } from "react-router-dom";
 
-import logo from './logo.svg';
 import 'reset-css';
 import './App.scss';
 import Home from './components/Home/Home.js';
 import About from './components/About/About.js';
 import Packages from './components/Packages/Packages.js';
 import Portfolio from './components/Portfolio/Portfolio.js';
+import logo from './images/logo.jpg';
 
 import {
   Collapse,
@@ -35,18 +35,24 @@ function App() {
     <div className="App">
       <Router>
       <div>
-        <Navbar  className="Navbar" color="dark" light expand="md">
-        <Nav className="mr-auto" navbar>
-          <NavItem>
+        <Navbar  className="Navbar" light expand="md">
+        <h3 >
+            <img  src={logo} alt="logo" height="70" width="70"></img>
+          </h3>
+        <Nav className="mr-auto NavItems" navbar>
+          <NavItem className="">
+          
+          </NavItem>
+          <NavItem className="NavItem">
             <Link className="NavChild" to="/">Home</Link>
           </NavItem>
-          <NavItem>
+          <NavItem className="NavItem">
             <Link className="NavChild" to="/about">About</Link>
           </NavItem>
-          <NavItem>
+          <NavItem className="NavItem">
             <Link className="NavChild" to="/portfolio">Portfolio</Link>
           </NavItem>
-          <NavItem>
+          <NavItem className="NavItem">
             <Link className="NavChild" to="/packages">Packages</Link>
           </NavItem>
           </Nav>

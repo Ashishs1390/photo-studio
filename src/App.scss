@@ -12,9 +12,18 @@ p {
 }
 
 .Navbar {
+    background-color: #000;
     .NavChild {
         color: #fff;
         padding-left: 10px;
+    }
+    .NavItem{
+        display: inline-block;
+        margin-right: 40px;
+    }
+    .NavItems{
+        font-size: 1.2rem;
+        margin: 0 150px;
     }
 }
 

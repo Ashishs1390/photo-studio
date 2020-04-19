@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './Packages.scss';
-import img1 from './../../images/1.jpeg'
 import section1 from './../../images/packages/bridalmakeup.jpg';
 import section2 from './../../images/packages/preeweddingmakeup.jpg';
 import section3 from './../../images/packages/HDmakeup.jpg';
