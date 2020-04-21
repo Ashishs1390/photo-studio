@@ -43,6 +43,23 @@
 }
 
 .ParentCarousel{
-    width: 800px;
-    margin: 0px 25%;
+    width: 100%;
+    // padding: 0px 45px;
+}
+.Classification{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    p{
+        display: inline-block;
+        padding-right: 10px;
+        border-right: 3px solid #fff;
+        margin-right: 10px;
+        &:last-child{
+            border-right: none;
+        } 
+    }
+}
+.IntroContainer{
+    margin-top: 45px;
+    margin-bottom: 45px;
 }

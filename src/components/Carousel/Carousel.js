@@ -1,6 +1,11 @@
-import React,{useState} from "react";
+import React from 'react';
+import Slider from "react-slick";
 import "./Carousel.scss";
-// import { UncontrolledCarousel } from 'reactstrap';
+import "./CarouselMod.scss";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import image1 from './../../images/homepage/1.jpg';
 import image2 from './../../images/homepage/2.jpg';
 import image3 from './../../images/homepage/3.jpg';
@@ -13,91 +18,94 @@ import image9 from './../../images/homepage/9.jpg';
 import image10 from './../../images/homepage/10.jpg';
 
 
-import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption
-  } from 'reactstrap';
 
-  const items = [
-    {
-      id:1,
-      src: image1,
-      altText: 'Slide 1',
-      caption: 'Slide 1'
-    },
-    {
-      id:2,
-      src: image2,
-      altText: 'Slide 2',
-      caption: 'Slide 2'
-    },
-    {
-      id:3,
-      src: image3,
-      altText: 'Slide 3',
-      caption: 'Slide 3'
-    }
-  ];
+var cards = [
+  {"image":image1, 
+  "title":"Burgundy Flemming", 
+  "subtitle":"Advertising"},
+ {"image":image2, 
+  "title":"Nigel Nigel", 
+  "subtitle":"Sound & Vision"},
+ {"image":image3, 
+  "title":"Caspian Bellevedere", 
+  "subtitle":"Accounting"},
+  {"image":image4, 
+  "title":"Caspian Bellevedere", 
+  "subtitle":"Accounting"},{"image":image5, 
+  "title":"Caspian Bellevedere", 
+  "subtitle":"Accounting"},{"image":image6, 
+  "title":"Caspian Bellevedere", 
+  "subtitle":"Accounting"},
+  {"image":image7, 
+  "title":"Caspian Bellevedere", 
+  "subtitle":"Accounting"},
+  {"image":image8, 
+  "title":"Caspian Bellevedere", 
+  "subtitle":"Accounting"},
+  {"image":image9, 
+  "title":"Caspian Bellevedere", 
+  "subtitle":"Accounting"},
+  {"image":image10, 
+  "title":"Caspian Bellevedere", 
+  "subtitle":"Accounting"}
+];
+function Article(data1) {
+  console.log(data1);
+  let {data} = data1;
+   var image = data.image,
+       title = data.title,
+       subtitle = data.subtitle;
+   return (
+     <figure className="snip1584">
+       <img src={image} />
+       <figcaption>
+         <h3>{title}</h3>
+         <h5>{subtitle}</h5>
+       </figcaption><a href="#"></a>
+     </figure>
+   )
+ }
 
-function CarouselSlider(){
-    // return(
-    //     <div className="CarouselContainer">
-    //         This is a Carousel
-            
-    //     </div>
-    // )
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [animating, setAnimating] = useState(false);
-  
-    const next = () => {
-      if (animating) return;
-      const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-      setActiveIndex(nextIndex);
-    }
-  
-    const previous = () => {
-      if (animating) return;
-      const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-      setActiveIndex(nextIndex);
-    }
-  
-    const goToIndex = (newIndex) => {
-      if (animating) return;
-      setActiveIndex(newIndex);
-    }
-  
-    const slides = items.map((item) => {
-      return (
-        <CarouselItem
-          onExiting={() => setAnimating(true)}
-          onExited={() => setAnimating(false)}
-          key={item.src}
-        >
-          <img src={item.src} alt={item.altText} width="800" />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-        </CarouselItem>
-      );
-    });
-  
-    return (
-        <div className="CarouselContainer">
-      <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-      >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-      </Carousel>
-      </div>
-    );
-}
+function News(data1) {
+  let {data} = data1;
+   var newsTemplate;
+   var settings = {
+    // variableWidth: true,
+     dots: true,
+     infinite: true,
+     slidesToShow: 3,
+     slidesToScroll: 1,
+    //  adaptiveHeight: true
+   }
+   if (data.length > 0) {
+     newsTemplate = data.map(function(item, index) {
+       return (
+           <div key={index}>
+             <Article data={item} />
+           </div>
+       )
+     })
+   } else {
+     newsTemplate = <p>Please add some cards</p>
+   }
+   return (
+     <div className='news'>
+       <Slider {...settings}>{newsTemplate}</Slider>
+       <strong className={'news__count ' + (data.length > 0 ? '':'none') }>
+         {/* Total cards: {data.length} */}
+       </strong>
+     </div>
+   );
+ }
 
-// const CarouselSlider = () => <UncontrolledCarousel items={items} />;
+var App1 = function() {
+   
+   return (
+     <div className='MainCarousel'>
+       <News data={cards} />
+     </div>
+   );
+ }
 
-export default CarouselSlider;
+
+export default App1;

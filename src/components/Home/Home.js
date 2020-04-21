@@ -7,7 +7,9 @@ import img3 from './../../images/img_lisa_circle.png';
 import Carousel from './../Carousel/Carousel.js'
 
 function Home(){
-    return(
+    return(<div>
+
+    
         <Container  fluid={true} className="MainContent">
             <Row>
                 <Col md="12" className="HeroImgContainer">
@@ -24,6 +26,13 @@ function Home(){
                 <Col md="12">
                     <div className="Headline">
                         <h2>I am sweekar. Hair and make up artist from Pune.</h2>
+                        <div className="Classification">
+                            <p>MakeUp</p>
+                            <p>Hair</p>
+                            <p>Studio</p>
+                            <p>Academy</p>
+                        </div>
+                        <h2>Say Yes To Look Beautiful</h2>
                     </div>
                 </Col>
                 <Col md="12">
@@ -33,6 +42,9 @@ function Home(){
                 </Col>
             </Row>
         </Container>
+        {/* <Carousel></Carousel> */}
+
+        </div>
     )
 }
 
