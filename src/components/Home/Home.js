@@ -23,7 +23,7 @@ function Home(){
                         </div>
                     </div>
                 </Col>
-                <Col md="12">
+                <Col md="12" className="IntroContainer">
                     <div className="Headline">
                         <h2>I am sweekar. Hair and make up artist from Pune.</h2>
                         <div className="Classification">
