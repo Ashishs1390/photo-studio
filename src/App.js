@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { SocialIcon } from 'react-social-icons';
 
 import 'reset-css';
 import './App.scss';
@@ -56,6 +57,14 @@ function App() {
             <Link className="NavChild" to="/packages">Packages</Link>
           </NavItem>
           </Nav>
+          <div className="Socials">
+            <span className="socials_facebook">
+              <SocialIcon network="facebook" url="https://www.facebook.com/makeoverbysweekar/" target="_blank" fgColor="#fff" bgColor="000" />  
+            </span>
+            <span className="socials_instagram">
+              <SocialIcon network="instagram" url="https://instagram.com/sweekarofficial_mua?igshid=2ed3evom8sl" target="_blank" fgColor="#fff" bgColor="000" />  
+            </span>
+          </div>
         </Navbar>
 
 
