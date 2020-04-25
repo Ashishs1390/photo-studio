@@ -2,18 +2,13 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './Packages.scss';
 import section1 from './../../images/packages/bridalmakeup.jpg';
-import section2 from './../../images/packages/preeweddingmakeup.jpg';
-import section3 from './../../images/packages/HDmakeup.jpg';
-import section4 from './../../images/packages/meternitymakeup.jpg';
-import section6 from './../../images/packages/preeweddingmakeup.jpg';
-
-import section5 from './../../images/packages/sidermakeup.jpg';
-
-import section7 from './../../images/packages/portfoliomakeup.jpg';
-
-import section8 from './../../images/packages/editorialgashionmakeup.jpg';
-
-import section9 from './../../images/packages/meternitymakeup.jpg';
+import airbrushmakeup from './../../images/packages/airbrushmakeup.jpg';
+import HDmakeup from './../../images/packages/HDmakeup.jpg';
+import preeweddingmakeup from './../../images/packages/preeweddingmakeup.jpg';
+import sidermakeup from './../../images/packages/sidermakeup.jpg';
+import portfoliomakeup from './../../images/packages/portfoliomakeup.jpg';
+import editorialgashionmakeup from './../../images/packages/editorialgashionmakeup.jpg';
+import Meternity from './../../images/packages/meternitymakeup.jpg';
 
 
 
@@ -57,7 +52,7 @@ function Packages(){
                   </div>
                    */}
                    <div>
-                      <img src={section2} height="800" width="800" ></img>
+                      <img src={section1} height="800" width="800" ></img>
                   </div>
                </Col>
                <Col md="6" className="PackageText Section-2">
@@ -82,34 +77,34 @@ function Packages(){
                </Col>
                <Col md="6">
                    <div>
-                      <img src={section3} height="800" width="800" ></img>
+                      <img src={HDmakeup} height="800" width="800" ></img>
                   </div>
                </Col>
            </Row>
            <Row>
-           <Col md="6">
-                {/* <div className="ImgSection">
+                <Col md="6">
+                    {/* <div className="ImgSection">
+                    </div>
+                    */}
+                    <div>
+                        <img src={airbrushmakeup} height="800" width="800" ></img>
+                    </div>
+                </Col>
+                <Col md="6" className="PackageText Section-4">
+                <div className="Courses"> 
+                    <h3 className="PackageHeader"> 
+                        Airbrush Makeup
+                    </h3>
+                    <p>
+                    The glamorous and smooth even finish of airbrush makeup is enough to justify its cost. 
+                    Airbrush makeup is a silicon-based lightweight makeup applied with an airgun. 
+                    A special kind of liquid foundation is poured into the small chamber of the airgun and sprayed on the brides face.
+                    As the trigger is pressed, a mist of foundation covers the face to give a flawless finish and the makeup blends perfectly with the skin giving a very long lasting effect.
+                    </p>
                 </div>
-                 */}
-                 <div>
-                      <img src={section4} height="800" width="800" ></img>
-                  </div>
-            </Col>
-            <Col md="6" className="PackageText Section-4">
-            <div className="Courses"> 
-                <h3 className="PackageHeader"> 
-                    Airbrush Makeup
-                </h3>
-                <p>
-                The glamorous and smooth even finish of airbrush makeup is enough to justify its cost. 
-                Airbrush makeup is a silicon-based lightweight makeup applied with an airgun. 
-                A special kind of liquid foundation is poured into the small chamber of the airgun and sprayed on the brides face.
-                As the trigger is pressed, a mist of foundation covers the face to give a flawless finish and the makeup blends perfectly with the skin giving a very long lasting effect.
-                </p>
-            </div>
-            
-            
-            </Col>
+                
+                
+                </Col>
 
            </Row>
            <Row>
@@ -125,20 +120,20 @@ function Packages(){
                 </Col>
                 <Col md="6">
                         <div>
-                            <img src={section5} height="800" width="800" ></img>
+                            <img src={sidermakeup} height="800" width="800" ></img>
                         </div>
                 </Col>
            </Row>
            <Row>
                 <Col md="6">
                     <div>
-                        <img src={section6} height="800" width="800" ></img>
+                        <img src={preeweddingmakeup} height="800" width="800" ></img>
                     </div>
                 </Col>
                 <Col md="6" className="PackageText Section-6">
                     <div className="Courses"> 
                             <h3 className="PackageHeader"> 
-                            PREEWEEDINGN MAKEUP FOR SHOOTS
+                            PRE WEDDING MAKEUP FOR SHOOTS
                             </h3>
                             <p>
                             Are you looking up for a pre-wedding photo shoot? Sweekar Pharande Makeup Artist in Pune is the ultimate place to get your makeup and hair done. Sweekar is a professional pre-wedding makeup artist & hairstylist and has decked up many brides-to-be for their magical and romantic pre-wedding shoots. He will coordinate your whole look with the event and ensure that you steal the focus of each image. With the best makeup artist in Pune on your side, you can immortalise the memories of your wedding.
@@ -160,14 +155,14 @@ function Packages(){
                 </Col>
                 <Col md="6">
                     <div>
-                        <img src={section7} height="800" width="800" ></img>
+                        <img src={portfoliomakeup} height="800" width="800" ></img>
                     </div>
                 </Col>
            </Row>
            <Row>
             <Col md="6">
                         <div>
-                            <img src={section8 } height="800" width="800" ></img>
+                            <img src={editorialgashionmakeup } height="800" width="800" ></img>
                         </div>
                     </Col>
                     
@@ -198,7 +193,7 @@ function Packages(){
                     </Col>
                     <Col md="6">
                         <div>
-                            <img src={section9 } height="800" width="800" ></img>
+                            <img src={Meternity } height="800" width="800" ></img>
                         </div>
                     </Col>
                 
