@@ -32,7 +32,7 @@ function Home(){
                             <p>Studio</p>
                             <p>Academy</p>
                         </div>
-                        <h2>Say Yes To Look Beautiful</h2>
+                        <h2>Say Yes To Looking Beautiful</h2>
                     </div>
                 </Col>
                 <Col md="12">
