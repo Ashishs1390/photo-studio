@@ -58,6 +58,10 @@ function App() {
           </NavItem>
           </Nav>
           <div className="Socials">
+          <span className="socials_whatsapp">
+              <SocialIcon network="whatsapp" fgColor="#fff" bgColor="000" />  
+              <span>+91-996014349</span>
+            </span>
             <span className="socials_facebook">
               <SocialIcon network="facebook" url="https://www.facebook.com/makeoverbysweekar/" target="_blank" fgColor="#fff" bgColor="000" />  
             </span>
