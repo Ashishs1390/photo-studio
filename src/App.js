@@ -37,7 +37,7 @@ function App() {
       <Router>
       <div>
         <Navbar  className="Navbar" light expand="md">
-        <h3 >
+        <h3 className="MainLogo">
             <img  src={logo} alt="logo" height="70" width="70"></img>
           </h3>
         <Nav className="mr-auto NavItems" navbar>
@@ -93,9 +93,49 @@ function App() {
     </Router>
 
     <footer className="MainFooter">
-        <h3>
-          This is a footer
+      <div className="footerContent Navbar">
+        <h3 className="FooterLogo">
+          <img  src={logo} alt="logo" height="70" width="70"></img>
         </h3>
+        {/* <Router>
+        <ul className="Content Content-I">
+          <li>
+            <Link className="NavChild" to="/">Home</Link>
+          </li>
+          <li>
+            <Link className="NavChild" to="/about">About</Link>
+          </li>
+        </ul>
+        <ul className="Content Content-II">
+          <li>
+            <Link className="NavChild" to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link className="NavChild" to="/packages">Packages</Link>
+          </li>
+        </ul>
+        </Router> */}
+        <div className="Content Content-III">
+          <h3 className="ContactUs-title">Contact us On</h3>
+          <div className="Socials">
+            <span className="socials_whatsapp">
+              <SocialIcon network="whatsapp" fgColor="#fff" bgColor="000" />  
+              <span>+91-996014349</span>
+            </span>
+            <span className="socials_whatsapp">
+              <SocialIcon network="email" fgColor="#fff" bgColor="000" />  
+            </span>
+            <span className="socials_facebook">
+              <SocialIcon network="facebook" url="https://www.facebook.com/makeoverbysweekar/" target="_blank" fgColor="#fff" bgColor="000" />  
+            </span>
+            <span className="socials_instagram">
+              <SocialIcon network="instagram" url="https://instagram.com/sweekarofficial_mua?igshid=2ed3evom8sl" target="_blank" fgColor="#fff" bgColor="000" />  
+            </span>
+
+          </div>
+
+        </div>
+      </div>
     </footer>
     </div>
   );
