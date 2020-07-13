@@ -20,7 +20,7 @@ function Packages(){
     return(
        <Container fluid={true}>
            <Row>
-                <Col md="6" className="PackageText Section-1">
+                <Col md="6" xs = "12" className="PackageText Section-1">
                     <h3 className="PackageHeader">
                         Service Offered
                     </h3>
@@ -40,14 +40,14 @@ function Packages(){
                         <li className="PackageList">Fantasy Makeup</li>
                     </ul>
                 </Col>
-                <Col md="6" className="PackageImg">
+                <Col md="6" xs = "12" className="PackageImg">
                   <div>
                       <img src={section1} height="800" width="800" ></img>
                   </div>
                 </Col>
            </Row>
            <Row>
-               <Col md="6">
+               <Col md="6" xs = "12">
                {/* <div className="ImgSection">
                   </div>
                    */}
@@ -55,7 +55,7 @@ function Packages(){
                       <img src={section1} height="800" width="800" ></img>
                   </div>
                </Col>
-               <Col md="6" className="PackageText Section-2">
+               <Col md="6" xs = "12" className="PackageText Section-2">
                    <h3 className="PackageHeader"> 
                         BRIDAL MAKEUP
                    </h3>
@@ -66,7 +66,7 @@ function Packages(){
                </Col>
            </Row>
            <Row>
-               <Col md="6" className="PackageText Section-3">
+               <Col md="6" xs = "12" className="PackageText Section-3">
                <h3 className="PackageHeader"> 
                     HD Makeup
                 </h3>
@@ -75,14 +75,14 @@ function Packages(){
                     Sweekar is the perfect bridal HD makeup artist and hairstylist for you.  
                 </p>
                </Col>
-               <Col md="6">
+               <Col md="6" xs = "12">
                    <div>
                       <img src={HDmakeup} height="800" width="800" ></img>
                   </div>
                </Col>
            </Row>
            <Row>
-                <Col md="6">
+                <Col md="6" xs = "12">
                     {/* <div className="ImgSection">
                     </div>
                     */}
@@ -90,7 +90,7 @@ function Packages(){
                         <img src={airbrushmakeup} height="800" width="800" ></img>
                     </div>
                 </Col>
-                <Col md="6" className="PackageText Section-4">
+                <Col md="6" xs = "12" className="PackageText Section-4">
                 <div className="Courses"> 
                     <h3 className="PackageHeader"> 
                         Airbrush Makeup
@@ -108,7 +108,7 @@ function Packages(){
 
            </Row>
            <Row>
-                <Col md="6" className="PackageText Section-5">
+                <Col md="6" xs = "12" className="PackageText Section-5">
                     <div className="Courses"> 
                             <h3 className="PackageHeader"> 
                                 SIDER MAKEUP
@@ -118,19 +118,19 @@ function Packages(){
                             </p>
                         </div>
                 </Col>
-                <Col md="6">
+                <Col md="6" xs = "12">
                         <div>
                             <img src={sidermakeup} height="800" width="800" ></img>
                         </div>
                 </Col>
            </Row>
            <Row>
-                <Col md="6">
+                <Col md="6" xs = "12">
                     <div>
                         <img src={preeweddingmakeup} height="800" width="800" ></img>
                     </div>
                 </Col>
-                <Col md="6" className="PackageText Section-6">
+                <Col md="6" xs = "12" className="PackageText Section-6">
                     <div className="Courses"> 
                             <h3 className="PackageHeader"> 
                             PRE WEDDING MAKEUP FOR SHOOTS
@@ -143,7 +143,7 @@ function Packages(){
            </Row>
            <Row>
                 
-                <Col md="6" className="PackageText Section-7">
+                <Col md="6" xs = "12" className="PackageText Section-7">
                     <div className="Courses"> 
                             <h3 className="PackageHeader"> 
                             PORTFOLIO MAKEUP FOR MODEL SHOOT
@@ -153,20 +153,20 @@ function Packages(){
                             </p>
                         </div>
                 </Col>
-                <Col md="6">
+                <Col md="6" xs = "12">
                     <div>
                         <img src={portfoliomakeup} height="800" width="800" ></img>
                     </div>
                 </Col>
            </Row>
            <Row>
-            <Col md="6">
+            <Col md="6" xs = "12">
                         <div>
                             <img src={editorialgashionmakeup } height="800" width="800" ></img>
                         </div>
                     </Col>
                     
-                    <Col md="6" className="PackageText Section-8">
+                    <Col md="6" xs = "12" className="PackageText Section-8">
                         <div className="Courses"> 
                                 <h3 className="PackageHeader"> 
                                 EDITORIAL / FASHION MAKEUP
@@ -181,7 +181,7 @@ function Packages(){
            <Row>
             
                     
-                    <Col md="6" className="PackageText Section-9">
+                    <Col md="6" xs = "12" className="PackageText Section-9">
                         <div className="Courses"> 
                                 <h3 className="PackageHeader"> 
                                 METERNITY MAKEUP FOR SHOOT
@@ -191,7 +191,7 @@ function Packages(){
                                 </p>
                             </div>
                     </Col>
-                    <Col md="6">
+                    <Col md="6" xs = "12">
                         <div>
                             <img src={Meternity } height="800" width="800" ></img>
                         </div>

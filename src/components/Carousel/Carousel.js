@@ -75,7 +75,7 @@ function News(data1) {
      infinite: true,
      slidesToShow: 3,
      slidesToScroll: 1,
-     autoplay: true,
+     autoplay: false,
      speed: 2000,
      autoplaySpeed: 2000,
      cssEase: "linear"

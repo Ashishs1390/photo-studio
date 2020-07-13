@@ -120,7 +120,7 @@ function App() {
         </ul>
         </Router> */}
         <div className="Content Content-III">
-          <h3 className="ContactUs-title">Contact us On</h3>
+          <h3 className="ContactUs-title">Contact Us On</h3>
           <div className="Socials">
             <span className="socials_whatsapp">
               <SocialIcon network="whatsapp" fgColor="#fff" bgColor="000" />  
