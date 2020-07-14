@@ -95,30 +95,13 @@ function App() {
         </Switch>
       </div>
     </Router>
-
+{/* 
     <footer className="MainFooter">
-      <div className="footerContent Navbar">
+      <div className="footerContent">
         <h3 className="FooterLogo">
           <img  src={logo} alt="logo" height="70" width="70"></img>
         </h3>
-        {/* <Router>
-        <ul className="Content Content-I">
-          <li>
-            <Link className="NavChild" to="/">Home</Link>
-          </li>
-          <li>
-            <Link className="NavChild" to="/about">About</Link>
-          </li>
-        </ul>
-        <ul className="Content Content-II">
-          <li>
-            <Link className="NavChild" to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link className="NavChild" to="/packages">Packages</Link>
-          </li>
-        </ul>
-        </Router> */}
+        
         <div className="Content Content-III">
           <h3 className="ContactUs-title">Contact Us On</h3>
           <div className="Socials">
@@ -140,7 +123,7 @@ function App() {
 
         </div>
       </div>
-    </footer>
+    </footer> */}
     </div>
   );
 }
